@@ -1,0 +1,320 @@
+/*CSS for the App*/
+.App {
+  text-align: center;
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(11, 1, 1);
+}
+/*CSS for the body*/
+body {
+  padding: 0%;
+  margin: 0;
+  background-color: #121212;
+}
+/*CSS for the Nav bar*/
+nav {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  display: grid;
+  place-items: center;
+  background-color: #121212;
+}
+/*CSS for the nav container to keep the reset button*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%; 
+  gap: 100%;
+}
+/*CSS for the nav H1 tab*/
+nav h1 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 45px;
+}
+/*CSS for the Rule page*/
+.rulebody {
+  background-color: rgb(0, 0, 0); 
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+/*CSS style for the  banner in the rule page*/
+.rulebanner{
+  background-color: #201f1f; 
+  padding: 20px;
+  margin: 50px;
+  color:#ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: left; 
+  margin-top: 250px;
+}
+
+/*CSS for the logo of the wordle*/
+.logo {
+  max-width: 95%;
+  height: auto;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+}
+/*CSS for the Home Page*/
+/*CSS for the button in the main page*/
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh; 
+}
+/*CSS for the oval button in the pages*/
+/* CSS for the oval button in the pages */
+.oval-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0; 
+  width: 175px; 
+  height: 25px; 
+  border-radius: 25px; 
+  text-decoration: none;
+  background-color: rgb(68, 88, 241); 
+  color: #ffffff; 
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button*/
+.oval-button:hover {
+  background-color: #1c70a7; 
+}
+
+/*CSS for the oval button to play again*/
+.oval-button-play {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0; 
+  width: 175px; 
+  height: 45px; 
+  border-radius: 25px; 
+  text-decoration: none;
+  background-color: rgb(68, 88, 241); 
+  color: #ffffff; 
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Hover effect */
+  &:hover {
+    background-color: #1c70a7; 
+  }
+}
+/*CSS for the reset button*/
+button.resetButton {
+  margin-left: 0px;
+  margin-top: 5px; 
+  background-color: rgb(105, 99, 99);
+  width:auto;
+  height: auto;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+/*CSS for the reset button hover*/
+button.resetButton:hover {
+  background-color: #b5a3a3; 
+}
+/*CSS for the h3 style*/
+h3{
+  color: white;
+}
+/*CSS for the h1 style*/
+h1{
+  color: white;
+}
+/*CSS for keeping the game contents in the center of the page*/
+.game {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  flex-direction: column;
+}
+/*CSS for the board in easy mode*/
+.board {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+/*CSS for the board in the hard mode*/
+.board-hard {
+  width: 300px;
+  height: 225px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+/*CSS for the row*/
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+/*CSS for the each letter*/
+.letter {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid grey;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*CSS for the correct key in the keyboard*/
+#correct {
+  background-color: #528d4e;
+}
+/*CSS for the almost correct key in the keyboard*/
+#almost {
+  background-color: #b49f39;
+}
+/*CSS for the  error*/
+#error {
+  background-color: #3a393c;
+}
+/*CSS for the keyboard*/
+.keyboard {
+  width: 700px;
+  height: 300px;
+  margin-top: 60px;
+}
+/*CSS for the keyboard line 1*/
+.line1 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+/*CSS for the keyboard line 2*/
+.line2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+/*CSS for the keyboard line 3*/
+.line3 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+/*CSS for the key*/
+.key {
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+/*CSS for the keyboard big key*/
+#big {
+  width: 100px;
+}
+/*CSS for the keyboard the disabled key*/
+#disabled {
+  background-color: #3a393c;
+}
+/*CSS for the mobile view*/
+@media only screen and (max-width: 600px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 20%; 
+  }
+
+  nav{
+    border-bottom: 3px solid grey;
+  }
+
+  nav h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .game {
+    padding-top: 5px;
+  }
+
+  .board,
+  .board-hard {
+    margin-top: 100px;
+    width: 60%;
+    height: 50%;
+  }
+
+  .keyboard {
+    width: 80%;
+    margin-top: 100px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    flex-direction: row;
+  }
+
+  .key {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .oval-button,
+  .oval-button-play {
+    width: 50%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .rulebody {
+    padding: 5px; 
+  }
+  .rulebanner {
+    margin: 20px;
+    margin-top: 300px; 
+  }
+  .logo {
+    display: none; 
+  }
+}
+
+
+
+
